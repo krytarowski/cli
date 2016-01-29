@@ -35,6 +35,7 @@ namespace Microsoft.DotNet.ProjectModel
             _framework = framework;
             _runtimeIdentifier = runtimeIdentifier;
 
+            // NOTE: project is null here for an unresolved project reference.
             BaseOutputPath = string.IsNullOrWhiteSpace(baseOutputPath) ? _project.ProjectDirectory : baseOutputPath;
 
             BaseCompilationOutputPath = string.IsNullOrWhiteSpace(baseOutputPath)

@@ -10,16 +10,17 @@ $failCount = 0
 $TestBinRoot = "$RepoRoot\artifacts\tests"
 
 $TestProjects = @(
-    "E2E",
-    "StreamForwarderTests",
-    "dotnet-publish.Tests",
-    "dotnet-compile.Tests",
-    "dotnet-build.Tests"
+    #"E2E",
+    #"StreamForwarderTests",
+    #"dotnet-publish.Tests",
+    #"dotnet-compile.Tests",
+    #"dotnet-build.Tests"
+    "dotnet-projectmodel-server.Tests"
 )
 
 $TestScripts = @(
-    "package-command-test.ps1",
-    "argument-forwarding-tests.ps1"
+    #"package-command-test.ps1",
+    #"argument-forwarding-tests.ps1"
 )
 
 # Publish each test project

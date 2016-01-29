@@ -21,7 +21,6 @@ foreach {
     $outputArray = dotnet hello | Out-String
     $output = [string]::Join('\n', $outputArray).Trim("`r", "`n")
     
-    del "project.json"
     if ($output -ne "hello") {
         error "Test Failed: $testName\dotnet hello"
         error "             printed $output"

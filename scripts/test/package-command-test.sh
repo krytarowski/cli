@@ -34,7 +34,6 @@ do
 
     output=$(dotnet hello)
 
-    rm "project.json"
 
     if [ "$output" == "Hello" ] ;
     then

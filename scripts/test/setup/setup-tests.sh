@@ -17,7 +17,7 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 source "$DIR/../../common/_common.sh"
 
 header "Test Setup: Restoring Prerequisites"
-"$REPOROOT/scripts/test/restore-test-prerequisites.sh"
+"$REPOROOT/scripts/test/setup/restore-test-prerequisites.sh"
 
 header "Test Setup: Building Prerequisites"
-"$REPOROOT/scripts/test/build-test-prerequisites.sh"
+"$REPOROOT/scripts/test/setup/build-test-prerequisites.sh"
